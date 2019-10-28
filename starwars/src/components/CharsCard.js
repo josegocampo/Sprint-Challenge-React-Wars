@@ -3,9 +3,12 @@ import styled from "styled-components";
 
 
 const Card = styled.div`
+display: flex;
+flex-direction: column;
+align-items:center;
 margin: 0 auto;
 height: 200px;
-width: 300px;
+width: 17vw;
 border: 1px solid black;
 border-radius: 5px;
 margin: 10px;
@@ -23,9 +26,9 @@ const CharsCard = props => {
         <div className = "chars-list">
             <div className = 'cards'>
             <Card>
-                <h4>name: {props.name}</h4>
-                <h4>year of birth: {props.birth}</h4>
-                <h4>height: {props.height}</h4>
+                <h3>Character: {props.name}</h3>
+                <h4>Year of Birth: {props.birth}</h4>
+                <h4>Stands at {props.height} cms tall</h4>
 
             </Card>
             </div>
