@@ -14,11 +14,12 @@ border-radius: 5px;
 margin: 10px;
 margin-top: 100px;
 background: black;
-color: white;
+color: yellow;
 &:hover{
-    background: white;
+    background: yellow;
     color: black;
 }
+border-radius: 10px;
 `
 
 const CharsCard = props => {
