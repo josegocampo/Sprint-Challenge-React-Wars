@@ -1,20 +1,33 @@
 import React from 'react';
 import './App.css';
-import CharsList from "./components/CharsList"
+import Cards from './components/TribunalCard';
+import Content from './components/Content';
+import Footer from './components/Footer'
+import BottomContent from './components/BottomContent'
+import { createGlobalStyle } from "styled-components";
+import Nav from './components/Nav';
+const GlobalStyles = createGlobalStyle`
+  @import url('https://fonts.googleapis.com/css?family=Lato');
+  body {
+    font-family: 'Lato', sans-serif;
+  }
+`
+
 
 const App = () => {
-  // Try to think through what state you'll need for this app before starting. Then build out
-  // the state properties here.
 
-  // Fetch characters from the star wars api in an effect hook. Remember, anytime you have a 
-  // side effect in a component, you want to think about which state and/or props it should
-  // sync up with, if any.
 
-  return (
-    <div className="App">
-      <CharsList/>
-    </div>
-  );
+return (
+  <div className="App">
+  <GlobalStyles/>
+  <Nav/>
+  <Content/>
+  <Cards/>
+  <BottomContent/>
+  <Footer/>
+  
+  </div>
+);
 }
 
 export default App;
